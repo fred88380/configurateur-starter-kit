@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>configurateur</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/configurateur.css">
+</head>
+
+<body>
+    <div class="block blockImage">
+        <div class="viewer">
+            <div class="textePerso">Votre texte ici...</div>
+            <img id="optionTissuImage" src="./images/option-1-violet.png">
+            <img id="optionPocheImage" src="./images/option-2-rouge.png">
+        </div>
+    </div>
+    <div class="block blockOptions">
+        <div class="tools">
+            <div class="price">47.20 €</div>
+            <div class="TitreTexte">Couleur du tablier : <span id="displayTissu">Violet</span></div>
+            <div class="ColorSelector" id="tissu">
+                    <div class="ColorRound" id="tissuJaune" style="background-color: rgb(226, 208, 71);"></div>
+                    <div class="ColorRound" id="tissuOrange" style="background-color: rgb(241, 114, 47);"></div>
+                    <div class="ColorRound selectedColor" id="tissuViolet" style="background-color: rgb(189, 58, 216);"></div>
+           
+            </div>
+            <div class="TitreTexte">Couleur poche : <span id="displayPoche">Rouge</span></div>
+            <div class="ColorSelector" id="optionPoche">
+                    <div class="ColorRound" id="pocheBleu" style="background-color: rgb(17, 17, 158);"></div>
+                    <div class="ColorRound" id="pocheFuchsia" style="background-color: rgb(153, 17, 87);"></div>
+                    <div class="ColorRound selectedColor" id="pocheRouge" style="background-color: rgb(211, 20, 49);"></div>
+                    <div class="ColorRound" id="pochevert" style="background-color: rgb(161, 204, 22);"></div>
+            </div>
+            <div class="TitreTexte">Texte personnalisé</div>
+            <div class="ColorSelector"><input type="radio" id="UseText1" name="UseText" value="true" checked> <label
+                    for="UseText1"><span></span>OUI</label> <input type="radio" id="UseText2" name="UseText"
+                    value="false"> <label for="UseText2"><span></span>NON</label> <input type="text" id="customText"
+                    maxlength="20" placeholder="Votre texte ici...">
+                <div id="textColorOptions">
+                    <div id="textColorOptions">
+                        <div class="ColorRound" id="texteBlanc" style="background-color: rgb(255, 255, 255);"></div>
+                        <div class="ColorRound selectedColor" id="texteNoir" style="background-color: rgb(0, 0, 0);"></div>
+                        <div class="ColorRound" id="texteBleu" style="background-color: rgb(17, 17, 158);"></div>
+                        <div class="ColorRound" id="texteFuchsia" style="background-color: rgb(153, 17, 87);"></div>
+                        <div class="ColorRound" id="texteRouge" style="background-color: rgb(211, 20, 49);"></div>
+                        <div class="ColorRound" id="textevert" style="background-color: rgb(161, 204, 22);"></div>
+                        <div class="ColorRound" id="texteJaune" style="background-color: rgb(226, 208, 71);"></div>
+                        <div class="ColorRound" id="texteOrange" style="background-color: rgb(241, 114, 47);"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/configurateur.js"></script>
+
+</html>
